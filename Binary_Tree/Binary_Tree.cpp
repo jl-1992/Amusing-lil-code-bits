@@ -47,10 +47,9 @@ int main()
 	Node * h = new Node(nullptr,nullptr,-3);
 	Node * i = new Node(d,e,6);
 	Node * j = new Node(nullptr,h,71);
-	Node * k = new Node(nullptr,nullptr,45);
 	Node * l = new Node(f,g,11);
 	Node * m = new Node(i,j,3);
-	Node * n = new Node(k,l,5);
+	Node * n = new Node(j,l,5);
 	Node * o = new Node(m,n,2);
 	cout << maxValue(o) << endl;
 }
