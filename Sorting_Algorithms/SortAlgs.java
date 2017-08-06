@@ -1,4 +1,4 @@
-public class SearchAlgs{
+public class SortAlgs{
 	
 	public int[] bubble(int[] n){
 		for(int j = 0;j<n.length;++j){
@@ -29,7 +29,7 @@ public class SearchAlgs{
 	}
 
 	public static void main(String[] args){
-		SearchAlgs s = new SearchAlgs();
+		SortAlgs s = new SortAlgs();
 		int[] n = {10,7,23,200,2345,-4,-3,0,21,1};
 		int[] t = s.bubble(n);
 		for(int i=0;i<t.length;++i)
