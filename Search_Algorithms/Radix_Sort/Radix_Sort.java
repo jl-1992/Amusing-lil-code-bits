@@ -16,7 +16,7 @@ public class Radix_Sort{
 		return a;
 	}
 
-	//Find Max number to mode with array
+	//Find Max number to mod with array
 	public int findMaxMod(int[] arr){
 		int mod = 10;
 		int count=0;
