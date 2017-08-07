@@ -98,7 +98,7 @@ public class Radix_Sort{
 
 	public static void main(String[] args){
 		Radix_Sort r = new Radix_Sort();
-		int[] z = {4,546,777,34,2,12,1234,276};
+		int[] z = {4,546,777,34,2,12,1234,276,5322,3,23,7,875};
 		r.sort(z);
 	}
 }
