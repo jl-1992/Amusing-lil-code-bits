@@ -40,15 +40,15 @@ int main()
 	Node * a = new Node(nullptr,nullptr,39);
 	Node * b = new Node(nullptr,nullptr,9);
 	Node * c = new Node(nullptr,nullptr,4);
-	Node * d = new Node(nullptr,nullptr,23);
-	Node * e = new Node(a,nullptr,14);
-	Node * g = new Node(b,c,103);
-	Node * h = new Node(nullptr,nullptr,-3);
-	Node * i = new Node(d,e,6);
-	Node * j = new Node(nullptr,h,71);
-	Node * l = new Node(h,g,11);
-	Node * m = new Node(i,j,3);
-	Node * n = new Node(j,l,5);
-	Node * o = new Node(m,n,2);
-	cout << maxValue(o) << endl;
+	Node * d = new Node(nullptr,a,23);
+	Node * e = new Node(nullptr,nullptr,14);
+	Node * f = new Node(b,c,103);
+	Node * g = new Node(nullptr,nullptr,-3);
+	Node * h = new Node(d,e,6);
+	Node * i = new Node(nullptr,nullptr,71);
+	Node * j = new Node(g,f,11);
+	Node * k = new Node(h,i,3);
+	Node * l = new Node(nullptr,j,5);
+	Node * m = new Node(k,l,2);
+	cout << maxValue(m) << endl;
 }
