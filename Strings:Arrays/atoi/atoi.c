@@ -1,25 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 int my_atoi(const char *str){
-	int factor = 1;
-	int val=0;
 	int len = strlen(str);
+	int factor = pow(10,len-1);
+	int val=0;
 
-	for(int i=0; i<len-1; ++i){
-		++str;
-	}
-
-	while(len>=1){
+	for(int i=0; i<len; ++i){
 		char c = *str;
 		if((int) c < 48 || (int) c > 57){
 			return 0;
 		}
 		val += factor * (c-'0');
-		factor*=10;
-		--str;
-		--len;
+		factor/=10;
+		++str;
 	}
 
 	return val;
