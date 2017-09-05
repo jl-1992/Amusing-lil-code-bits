@@ -10,7 +10,7 @@ int my_atoi(const char *str){
 
 	for(int i=0; i<len; ++i){
 		char c = *str;
-		if((int) c < 48 || (int) c > 57){
+		if(c < 48 || c > 57){
 			return 0;
 		}
 		val += factor * (c-'0');
@@ -30,7 +30,7 @@ int main()
    val = my_atoi(str);
    printf("String value = %s, Int value = %d\n", str, val);
 
-   strcpy(str, "tutorialspoint.com");
+   strcpy(str, "Not a number");
    val = my_atoi(str);
    printf("String value = %s, Int value = %d\n", str, val);
 
