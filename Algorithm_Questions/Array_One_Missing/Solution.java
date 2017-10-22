@@ -1,15 +1,12 @@
-import java.util.HashMap;
+import java.util.HashSet;
 
 public class Solution{
 	
 	public static int findNum(int[] arr){
-		HashMap<Integer, Integer> h = new HashMap<Integer,Integer>();
+		HashSet<Integer> h = new HashSet<Integer>();
 
 		for(Integer i : arr){
-			h.put(i,i);
-		}
-		for(int i=1; i<=10; i++){
-			if(h.get(i)==null)
+			if(h.add(i)==false)
 				return i;
 		}
 
