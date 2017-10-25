@@ -4,10 +4,18 @@ public class Solution{
 	
 	public static int findNum(int[] arr){
 		HashSet<Integer> h = new HashSet<Integer>();
+		boolean flag = true;
 
 		for(Integer i : arr){
 			if(h.add(i)==false)
-				return i;
+				flag=false;
+		}
+
+		if(!flag){
+			for(int i=1; i<=10; i++){
+				if(!h.contains(i))
+					return i;
+			}
 		}
 
 		return -1;
